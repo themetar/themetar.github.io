@@ -126,6 +126,74 @@ p { margin-bottom: .5em; }
   font-size: .85rem;
 }
 
+/* Homepage */
+.title-block {
+  display: flex;
+  flex-flow: column nowrap;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6)),
+              url("../images/james-harrison-vpOeXr5wmR4-unsplash.jpg") center / cover no-repeat local;
+  border-bottom: .4rem solid #DB2763;
+  padding-top: 3rem;
+}
+
+.title-block header {
+  flex: 1 0 auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  color: #F5F5F5;
+  text-shadow:  -1px -1px 0 #1F1F1F;
+}
+
+.title-block h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.title-block p {
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+  font-size: 2rem;
+}
+
+.social-links li:nth-child(n+2) { margin-left: 1rem; }
+
+.social-links a {
+  padding-left: 1em;
+  color: inherit;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 1em;
+}
+
+.social-links a::before { content: unset; }
+
+.social-links a[href*="github"] {
+  background-image: url("../images/icons/GitHub-Mark-Light-64px.png");
+}
+
+.social-links a[href*="linkedin"] {
+  background-image: url("../images/icons/iconmonstr-linkedin-3-64.png");
+}
+
+.social-links a[href*="twitter"] {
+  background-image: url("../images/icons/iconmonstr-twitter-4-64.png");
+}
+
 @media screen and (max-width:500px) {
   html { font-size: 14px; }
+
+  .title-block h1 { font-size: 3rem; }
 }

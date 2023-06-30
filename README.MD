@@ -5,3 +5,7 @@ Except where stated differently, all content is owned by the author Dimitar "the
 ## Credits
 
 [Poppins](https://fonts.google.com/specimen/Poppins) font by Indian Type Foundry and Jonny Pinhorn.
+
+Header photo by [James Harrison](https://unsplash.com/@jstrippa) on [Unsplash](https://unsplash.com/).
+
+Social media icons from [iconmonstr](https://iconmonstr.com/).
