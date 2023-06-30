@@ -1,0 +1,17 @@
+---
+layout: base
+---
+<div class="navigation-bar fill">
+  <ul class="top-nav container">
+    <li {% if page.url == "/" %} style="visibility: hidden;" {% endif %}><a href="/">Home</a></li>
+    <li><a href="#portfolio">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+<div class="main-content">
+  {{ content }}
+
+  <footer class="footer">
+    <p class="cpyr">Copyright © 2023 <a href="/">Dimitar Apostolovski</a></p>
+  </footer>
+</div>

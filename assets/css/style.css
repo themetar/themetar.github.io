@@ -1,0 +1,131 @@
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+/**/
+
+/* Fonts */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+/**/
+
+/* General elements */
+html {
+  font-size: 16px;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #F5F5F5;
+  color: #1F1F1F;
+}
+
+a {
+  --color: #027BCE;
+  color: var(--color);
+  text-decoration: none;
+  position: relative;
+}
+
+a:visited {
+  color: var(--color);
+}
+
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 2px;
+  background: var(--color);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 200ms ease-in-out;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+p { margin-bottom: .5em; }
+/**/
+
+/* Utilities */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.fill { background: #F5F5F5; }
+/**/
+
+.navigation-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .4);
+}
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem;
+}
+
+.top-nav li:not(:last-child) { margin-right: 1rem; }
+.top-nav li:first-child { margin-right: auto; }
+
+.main-content {
+  min-height: 100vh;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: .5rem 1rem;
+  background-color: #1F1F1F;
+  color: #F5F5F5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer .cpyr {
+  padding-top: 1em;
+  text-align: center;
+  font-size: .85rem;
+}
+
+@media screen and (max-width:500px) {
+  html { font-size: 14px; }
+}
