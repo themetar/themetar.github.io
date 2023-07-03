@@ -71,6 +71,12 @@ a:hover::before {
 }
 
 p { margin-bottom: .5em; }
+
+section { scroll-margin-top: 3rem; }
+
+section:not(:last-child) {
+  margin-bottom: 2rem;
+}
 /**/
 
 /* Utilities */
@@ -83,6 +89,11 @@ p { margin-bottom: .5em; }
 }
 
 .fill { background: #F5F5F5; }
+
+.highlight {
+  background-color: #DB2763;
+  color: #F5F5F5;
+}
 /**/
 
 .navigation-bar {
@@ -192,6 +203,22 @@ p { margin-bottom: .5em; }
 
 .social-links a[href*="twitter"] {
   background-image: url("../images/icons/iconmonstr-twitter-4-64.png");
+}
+
+.section-title {
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  gap: 1rem 3rem;
+}
+
+.projects-list header{
+  grid-column: 1 / -1;
 }
 
 @media screen and (max-width:500px) {
