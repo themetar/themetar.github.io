@@ -255,3 +255,19 @@ section:not(:last-child) {
 
   .projects-list { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 }
+
+@media screen and (min-width:1921px) {
+  .title-block {
+    position: fixed;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    width: 33%;
+    border-bottom: none;
+    border-right: .4rem solid #DB2763;
+  }
+
+  .main-content {
+    margin-left: 33%;
+  }
+}
