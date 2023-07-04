@@ -51,3 +51,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - README.MD
+
+collections:
+  - highlighted_projects

@@ -16,6 +16,21 @@ layout: site
   <header>
     <h1 class="section-title">Projects</h1>
   </header>
+  {% assign sorted-projects = site.highlighted_projects | reverse %}
+  {% for project in sorted-projects %}
+  <article class="project">
+    <h1><a target="_blank" rel="nooperer" href="{{ project.link }}">{{project.title}}</a></h1>
+    <div class="info">
+      {{ project.content }}
+      <hr>
+      <ul class="topics">
+      {% for topic in project.topics %}
+        <li>{{ topic }}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </article>
+  {% endfor %}
 </section>
 <section id="contact" class="container">
   <header>
