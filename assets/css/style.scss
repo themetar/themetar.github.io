@@ -77,6 +77,11 @@ section { scroll-margin-top: 3rem; }
 section:not(:last-child) {
   margin-bottom: 2rem;
 }
+
+h2 {
+  margin-top: 1em;
+  margin-bottom: .6em;
+}
 /**/
 
 /* Utilities */
@@ -246,6 +251,14 @@ section:not(:last-child) {
 
 .topics li ~ li::before {
   content: ", ";
+}
+
+.web-presence li {
+  display: inline-block;
+}
+
+.web-presence li ~ li {
+  margin-left: 3em;
 }
 
 @media screen and (max-width:500px) {
