@@ -8,7 +8,7 @@ layout: base
     <li><a href="#contact">Contact</a></li>
   </ul>
 </div>
-<div class="main-content">
+<div class="main-content {% if page.url == '/' %}on-homepage{% endif %}">
   {{ content }}
 
   <footer class="footer">
