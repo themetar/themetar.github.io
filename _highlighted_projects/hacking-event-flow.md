@@ -7,4 +7,4 @@ topics:
   - Flash
 date: 2011-12-22
 ---
-Old but gold. Quick tutorial explaining the Flash Event Flow model; and how to use it.
+Old but gold. Quick tutorial explaining the Flash Event Flow model; and how to use it and manipulate it.
