@@ -55,3 +55,15 @@ exclude:
 
 collections:
   - highlighted_projects
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      image:
+        path: /assets/images/themetar-preview.png
+        height: 200
+        width: 600
+        alt:  Site banner
