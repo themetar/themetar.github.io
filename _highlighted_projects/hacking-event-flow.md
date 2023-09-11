@@ -3,7 +3,7 @@ title: Hacking the Event Flow
 link: https://code.tutsplus.com/as3-quick-tip-hacking-the-event-flow--active-10482t
 topics:
   - Tutorial
-  - AS3
+  - ActionScript 3
   - Flash
 date: 2011-12-22
 ---
