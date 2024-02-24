@@ -1,6 +1,7 @@
 ---
 title: Contributions to The Odin Project
 link: https://github.com/TheOdinProject/curriculum/commits/main?author=themetar
+link-verb: See them
 topics:
   - Writing
   - Web development

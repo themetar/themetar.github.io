@@ -1,6 +1,7 @@
 ---
 title: Battleship
 link: https://themetar.github.io/battleship-top/
+link-verb: Play it
 topics:
   - React
   - HTML

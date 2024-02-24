@@ -1,6 +1,7 @@
 ---
 title: Phacepook
 link: https://github.com/themetar/odin-facebook
+link-verb: Check it out
 topics:
   - Ruby on Rails
   - Tailwind CSS

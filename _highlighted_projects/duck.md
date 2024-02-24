@@ -1,6 +1,7 @@
 ---
 title: DU-C/K
 link: https://themetar.itch.io/duck
+link-verb: Play it
 topics:
   - Haxe
   - OpenFL

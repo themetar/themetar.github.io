@@ -18,9 +18,10 @@ layout: site
   {% assign sorted-projects = site.highlighted_projects | reverse %}
   {% for project in sorted-projects %}
   <article class="project">
-    <h1><a target="_blank" rel="nooperer" href="{{ project.link }}">{{project.title}}</a></h1>
+    <h1>{{project.title}}</h1>
     <div class="info">
       {{ project.content }}
+      <p class="cta"><a target="_blank" rel="nooperer" href="{{ project.link }}">{{ project.link-verb | default: "Link" }} here</a></p>
       <hr>
       <ul class="topics">
       {% for topic in project.topics %}
