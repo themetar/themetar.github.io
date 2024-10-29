@@ -5,6 +5,7 @@ link-verb: See them
 topics:
   - Programming
   - JavaScript
+  - Ruby
 date: 2024-09-17
 ---
 [Exercism] is a programming language learning platform.
