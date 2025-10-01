@@ -6,8 +6,8 @@ layout: site
     <h1>{{ site.title }}</h1>
     <p>Web Developer, Programmer, Person</p>
     <ul class="social-links">
-      <li><a target="_blank" rel="nooperer" href="https://github.com/themetar"></a></li>
-      <li><a target="_blank" rel="nooperer" href="https://www.linkedin.com/in/dimitar-apostolovski"></a></li>
+      <li><a target="_blank" rel="noopener" href="https://github.com/themetar"></a></li>
+      <li><a target="_blank" rel="noopener" href="https://www.linkedin.com/in/dimitar-apostolovski"></a></li>
     </ul>
   </header>
 </div>
@@ -21,7 +21,7 @@ layout: site
     <h1>{{project.title}}</h1>
     <div class="info">
       {{ project.content }}
-      <p class="cta"><a target="_blank" rel="nooperer" href="{{ project.link }}">{{ project.link-verb | default: "Link" }} here</a></p>
+      <p class="cta"><a target="_blank" rel="noopener" href="{{ project.link }}">{{ project.link-verb | default: "Link" }} here</a></p>
       <hr>
       <ul class="topics">
       {% for topic in project.topics %}
@@ -40,7 +40,7 @@ layout: site
   <h2>Me on the web</h2>
   <ul class="web-presence">
   {% for location in site.data.web_presence %}
-    <li><a target="_blank" rel="nooperer" href="{{ location.link }}">{{ location.title }}</a></li>
+    <li><a target="_blank" rel="noopener" href="{{ location.link }}">{{ location.title }}</a></li>
   {% endfor %}
   </ul>
 </section>
