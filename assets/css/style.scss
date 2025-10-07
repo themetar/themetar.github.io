@@ -1,34 +1,13 @@
 ---
 ---
-/* Resets */
-* {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
-/**/
+$base-color: #F5F5F5;
+$text-color: #1F1F1F;
+$link-color: #027BCE;
+$secondary-color: #06BCC1;
+$embellishment-color: #DB2763;
 
-/* Fonts */
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: normal;
-  font-display: swap;
-  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
-}
-/**/
+@import "resets";
+@import "fonts";
 
 /* General elements */
 html {
@@ -37,37 +16,37 @@ html {
 }
 
 body {
-  background: #F5F5F5;
-  color: #1F1F1F;
+  background: $base-color;
+  color: $text-color;
 }
 
 a {
-  --color: #027BCE;
+  --color: #{$link-color};
   color: var(--color);
   text-decoration: none;
   position: relative;
-}
 
-a:visited {
-  color: var(--color);
-}
+  &:visited {
+    color: var(--color);
+  }
 
-a::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -2px;
-  height: 2px;
-  background: var(--color);
-  transform-origin: left;
-  transform: scaleX(0);
-  transition: transform 200ms ease-in-out;
-}
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: var(--color);
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+  }
 
-a:hover::before {
-  transform: scaleX(1);
+  &:hover::before {
+    transform: scaleX(1);
+  }
 }
 
 p { margin-bottom: .5em; }
@@ -97,11 +76,11 @@ h2 {
   padding-right: 1rem;
 }
 
-.fill { background: #F5F5F5; }
+.fill { background: $base-color; }
 
 .highlight {
-  background-color: #DB2763;
-  color: #F5F5F5;
+  background-color: $embellishment-color;
+  color: $base-color;
 }
 /**/
 
@@ -119,10 +98,10 @@ h2 {
   justify-content: space-between;
   list-style: none;
   padding: 1rem;
-}
 
-.top-nav li:not(:last-child) { margin-right: 1rem; }
-.top-nav li:first-child { margin-right: auto; }
+  li:not(:last-child) { margin-right: 1rem; }
+  li:first-child { margin-right: auto; }
+}
 
 .main-content {
   min-height: 100vh;
@@ -134,18 +113,18 @@ h2 {
 .footer {
   margin-top: 3rem;
   padding: .5rem 1rem;
-  background-color: #1F1F1F;
-  color: #F5F5F5;
+  background-color: $text-color;
+  color: $base-color;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-}
 
-.footer .cpyr {
-  padding-top: 1em;
-  text-align: center;
-  font-size: .85rem;
+  .cpyr {
+    padding-top: 1em;
+    text-align: center;
+    font-size: .85rem;
+  }
 }
 
 /* Homepage */
@@ -154,31 +133,31 @@ h2 {
   flex-flow: column nowrap;
   background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.6)),
               url("../images/james-harrison-vpOeXr5wmR4-unsplash.jpg") center / cover no-repeat local;
-  border-bottom: .4rem solid #DB2763;
+  border-bottom: .4rem solid $embellishment-color;
   padding-top: 3rem;
-}
 
-.title-block header {
-  flex: 1 0 auto;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  padding-bottom: 3rem;
-  color: #F5F5F5;
-  text-shadow:  -1px -1px 0 #1F1F1F;
-}
+  header {
+    flex: 1 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    color: $base-color;
+    text-shadow:  -1px -1px 0 $text-color;
+  }
 
-.title-block h1 {
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 
-.title-block p {
-  margin-bottom: 1rem;
+  p {
+    margin-bottom: 1rem;
+  }
 }
 
 .social-links {
@@ -187,26 +166,26 @@ h2 {
   justify-content: end;
   align-self: flex-end;
   font-size: 2rem;
-}
 
-.social-links li:nth-child(n+2) { margin-left: 1rem; }
+  li:nth-child(n+2) { margin-left: 1rem; }
 
-.social-links a {
-  padding-left: 1em;
-  color: inherit;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: 1em;
-}
+  a {
+    padding-left: 1em;
+    color: inherit;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 1em;
+  
+    &::before { content: unset; }
 
-.social-links a::before { content: unset; }
+    &[href*="github"] {
+      background-image: url("../images/icons/GitHub-Mark-Light-64px.png");
+    }
 
-.social-links a[href*="github"] {
-  background-image: url("../images/icons/GitHub-Mark-Light-64px.png");
-}
-
-.social-links a[href*="linkedin"] {
-  background-image: url("../images/icons/iconmonstr-linkedin-3-64.png");
+    &[href*="linkedin"] {
+      background-image: url("../images/icons/iconmonstr-linkedin-3-64.png");
+    }
+  }
 }
 
 .section-title {
@@ -225,43 +204,49 @@ h2 {
   grid-column: 1 / -1;
 }
 
-.project h1,
-.project .info {
-  padding: .5rem 1rem;
-  padding-top: 1rem;
+.project {
+  h1, .info {
+    padding: .5rem 1rem;
+    padding-top: 1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .info hr {
+    border: 0;
+    background-color: $secondary-color;
+    height: 1px;
+    margin: .5rem 1rem;
+  }
+
+  .cta {
+    text-align: right;
+  }
 }
 
-.project h1 {
-  font-size: 1.3rem;
-}
-
-.project .info hr {
-  border: 0;
-  background-color: #06BCC1;
-  height: 1px;
-  margin: .5rem 1rem;
-}
-
-.project .cta {
-  text-align: right;
-}
-
-.project .topics li {
+.topics {
+  li {
   display: inline-block;
-  color: #06BCC1;
+  color: $secondary-color;
   margin-bottom: .25em;
+  }
+
+  li ~ li::before {
+    content: ", ";
+  }
 }
 
-.topics li ~ li::before {
-  content: ", ";
-}
 
-.web-presence li {
-  display: inline-block;
-}
+.web-presence {
+  li {
+    display: inline-block;
+  }
 
-.web-presence li ~ li {
-  margin-left: 3em;
+  li ~ li {
+    margin-left: 3em;
+  }
 }
 
 @media screen and (max-width:500px) {
@@ -280,7 +265,7 @@ h2 {
     bottom: 0px;
     width: 33%;
     border-bottom: none;
-    border-right: .4rem solid #DB2763;
+    border-right: .4rem solid $embellishment-color;
   }
 
   .main-content.on-homepage {
