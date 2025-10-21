@@ -6,8 +6,8 @@ $link-color: #027BCE;
 $secondary-color: #06BCC1;
 $embellishment-color: #DB2763;
 
-@import "resets";
-@import "fonts";
+@use "resets";
+@use "fonts";
 
 /* General elements */
 html {
