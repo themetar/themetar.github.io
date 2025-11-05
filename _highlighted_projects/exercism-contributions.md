@@ -15,3 +15,4 @@ People can hone their coding skills and practice new languages by working on pro
 I'm mentoring students and I've contributed to the contents of several exercises.
 
 [Exercism]: https://exercism.org
+{% default_link_attributes %}

@@ -12,3 +12,4 @@ date: 2022-05-11
 I've made various small contribututions to its lessons. 
 
 [The Odin Project]: https://www.theodinproject.com/
+{% default_link_attributes %}
