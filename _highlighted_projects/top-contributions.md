@@ -7,7 +7,7 @@ topics:
   - Web development
 date: 2022-05-11
 ---
-[The Odin Project] is an open-source curriculum for learning full-stack web development.
+[{{ "The Odin Project" | nbsp }}][The Odin Project] is an open-source curriculum for learning full-stack web development.
 
 I've made various small contribututions to its lessons. 
 
