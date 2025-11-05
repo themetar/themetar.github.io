@@ -1,10 +1,11 @@
 ---
 ---
-$base-color: #F5F5F5;
-$text-color: #1F1F1F;
-$link-color: #027BCE;
-$secondary-color: #06BCC1;
-$embellishment-color: #DB2763;
+$base-color: #021927;
+$text-color: #F5F5F5;
+$footer-color: #010C13;
+$link-color: #12C2F8;
+$secondary-color: #B0FAFD;
+$embellishment-color: #DF9A57;
 
 @use "resets";
 @use "fonts";
@@ -113,8 +114,7 @@ h2 {
 .footer {
   margin-top: 3rem;
   padding: .5rem 1rem;
-  background-color: $text-color;
-  color: $base-color;
+  background-color: $footer-color;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -145,8 +145,8 @@ h2 {
     align-items: center;
     padding: 1rem;
     padding-bottom: 3rem;
-    color: $base-color;
-    text-shadow:  -1px -1px 0 $text-color;
+    color: $text-color;
+    text-shadow:  -1px -1px 0 $base-color;
   }
 
   h1 {
