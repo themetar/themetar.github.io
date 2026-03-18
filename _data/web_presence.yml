@@ -1,6 +1,9 @@
 - title: GitHub
   link: https://github.com/themetar
+  icon: /assets/images/icons/GitHub-Mark-Light-64px.png
 - title: Exercism
   link: https://exercism.org/profiles/themetar
+  icon: /assets/images/icons/exercism-face-light.svg
 - title: LinkedIn
   link: https://www.linkedin.com/in/dimitar-apostolovski
+  icon: /assets/images/icons/iconmonstr-linkedin-3-64.png

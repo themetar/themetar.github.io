@@ -167,34 +167,6 @@ h2 {
   to { background-position: 100%; }
 }
 
-.social-links {
-  list-style: none;
-  display: flex;
-  justify-content: end;
-  align-self: flex-end;
-  font-size: 2rem;
-
-  li:nth-child(n+2) { margin-left: 1rem; }
-
-  a {
-    padding-left: 1em;
-    color: inherit;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 1em;
-  
-    &::before { content: unset; }
-
-    &[href*="github"] {
-      background-image: url("../images/icons/GitHub-Mark-Light-64px.png");
-    }
-
-    &[href*="linkedin"] {
-      background-image: url("../images/icons/iconmonstr-linkedin-3-64.png");
-    }
-  }
-}
-
 .section-title {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
@@ -247,6 +219,17 @@ h2 {
 
 
 .web-presence {
+  list-style: none;
+
+  a {
+    padding-left: 1.4em;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 1.2em;
+
+    // background-image is set in inline style
+  }
+
   li {
     display: inline-block;
   }

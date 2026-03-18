@@ -33,10 +33,10 @@ layout: site
     <h1 class="section-title">Contact me</h1>
   </header>
   <p>If you want to work together, you can reach me via: <span class="highlight">d.apostolovski [at] protonmail.com</span>.</p>
-  <h2>Me on the web</h2>
+  <h2>Elsewhere on the web</h2>
   <ul class="web-presence">
   {% for location in site.data.web_presence %}
-    <li><a target="_blank" rel="noopener" href="{{ location.link }}">{{ location.title }}</a></li>
+    <li><a target="_blank" rel="noopener" href="{{ location.link }}" {% if location.icon %} style="background-image: url('{{ location.icon }}');"{% endif %}>{{ location.title }}</a></li>
   {% endfor %}
   </ul>
 </section>
